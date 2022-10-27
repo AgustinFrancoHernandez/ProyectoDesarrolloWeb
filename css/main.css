@@ -1,466 +1,333 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 footer {
-    margin-top: auto;
-}
-
-/* PAGINA INDEX */
-
-
-
-/* .grid-container {
-    display: grid;
-    grid-template:
-        "header" auto
-        "section" auto
-        "footer" auto /
-        100%;
-} */
-
-
-/* Header */
-
+  margin-top: auto; }
 
 .header {
-    z-index: 1;
-    /* grid-area: header; */
-    width: 100%;
-    top: 0;
-    left: 0;
-}
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0; }
 
 .header__logotechpc {
-    height: 40px;
-    width: auto;
-    padding: 0 30px;
-}
-
-/* Navbar */
+  height: 40px;
+  width: auto;
+  padding: 0 30px; }
 
 .navbar {
-    background-color: #121212;
-}
+  background-color: #121212; }
 
 .navbar-nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
 
 .navbar-link {
-    text-decoration: none;
-    color: white;
-    border-radius: 2px;
-    padding: 5px;
-}
-
-.navbar-link:hover {
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  padding: 5px; }
+  .navbar-link:hover {
     background-color: #3c9e33;
     transition: 0.5s;
-    color: white;
-}
+    color: white; }
 
 .navbar-toggler {
-    cursor: pointer;
-    margin-right: 8%;
-}
-
-/* Section Index */
-
-
-.section {
-    /* grid-area: section; */
-    height: 100%;
-    width: 100%;
-}
-
-.titulodestacados {
-    text-align: center;
-    font-size: 120%;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 4px;
-    text-shadow: 2px 2px 10px #3c9e33;
-    border-style: outset;
-    border-radius: 4px;
-    border-color: #3c9e33;
-    background-color: #121212;
-    color: #ffffff;
-}
-
-.divportadainicio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin-top: 10px;
-    height: 100%;
-    width: 100%;
-}
-
-.divportadainicio-imgportada {
-    height: 10%;
-    width: auto;
-}
-
-.descripcionportada {
-    font-size: 20px;
-    text-align: center;
-    padding: 5px 20px;
-}
-
-.descripcionportada::after {
-    content: " 😎 ";
-}
-
-.divpadredestacados {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.descripciondestacados {
-    text-align: center;
-    font-size: 15px;
-    margin: 10px 7px;
-}
-
-.divpadredestacados-item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.divpadredestacados-item:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
-.divpadredestacados-item_img {
-    height: 150px;
-    width: auto;
-}
-
-.container {
-    display: flex;
-    flex-direction: column
-}
-
-
-
-
-/* Footer */
-
-
-
+  cursor: pointer;
+  margin-right: 8%; }
 
 .footer {
-    /* grid-area: footer; */
-    background-color: #121212;
-    height: 100%;
-    width: 100%;
-}
+  background-color: #121212;
+  height: 100%;
+  width: 100%; }
 
 .footer__imgig {
-    transition: all 0.3s ease;
-    height: 35px;
-    width: auto;
-}
-
-.footer__imgig:hover {
+  transition: all 0.3s ease;
+  height: 35px;
+  width: auto; }
+  .footer__imgig:hover {
     filter: opacity(0.9);
-    transform: scale(0.9);
-}
+    transform: scale(0.9); }
 
 .footer__imgf {
-    transition: all 0.3s ease;
-    height: 30px;
-    width: auto;
-}
-
-.footer__imgf:hover {
+  transition: all 0.3s ease;
+  height: 30px;
+  width: auto; }
+  .footer__imgf:hover {
     filter: opacity(0.9);
-    transform: scale(0.9);
-}
+    transform: scale(0.9); }
 
 .footercontent {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
 
 .footertext {
-    color: white;
-}
+  color: white; }
 
 small {
-    margin-top: 10px;
-    color: white;
-}
+  margin-top: 10px;
+  color: white; }
 
+.section {
+  height: 100%;
+  width: 100%; }
 
+.titulodestacados {
+  text-align: center;
+  font-size: 120%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 4px;
+  text-shadow: 2px 2px 10px #3c9e33;
+  border-style: outset;
+  border-radius: 4px;
+  border-color: #3c9e33;
+  background-color: #121212;
+  color: #ffffff; }
 
-/* PAGINA CATALOGO */
+.divportadainicio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  height: 100%;
+  width: 100%; }
 
-/* Section Catalogo */
+.divportadainicio-imgportada {
+  height: 10%;
+  width: auto; }
 
+.descripcionportada {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 20px; }
+  .descripcionportada::after {
+    content: " 😎 "; }
+
+.divpadredestacados {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.descripciondestacados {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px 7px; }
+
+.divpadredestacados-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; }
+  .divpadredestacados-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+
+.divpadredestacados-item_img {
+  height: 150px;
+  width: auto; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
 
 .contenedorpadrecatalogo {
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .imagescatalogo {
-    height: 85%;
-    width: auto;
-}
+  height: 85%;
+  width: auto; }
 
 .art {
-    justify-content: center;
-    margin-top: 5%;
-    display: flex;
-    height: 85%;
-    width: 85%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.art:hover {
+  justify-content: center;
+  margin-top: 5%;
+  display: flex;
+  height: 85%;
+  width: 85%;
+  transition: transform 0.3s ease-in-out; }
+  .art:hover {
     filter: opacity(0.9);
-    transform: scale(1.04);
-}
+    transform: scale(1.04); }
 
 .arttitle {
-    text-align: center;
-    font-size: 80%;
-}
+  text-align: center;
+  font-size: 80%; }
 
 .catalogo {
-    margin-top: 6%;
-    text-align: center;
-    font-size: 100%;
-}
+  margin-top: 6%;
+  text-align: center;
+  font-size: 100%; }
 
 .linkcatalogo {
-    cursor: pointer;
-    color: black;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 200px;
-    width: 200px;
-}
-
-.linkcatalogo:hover {
-    color: #3c9e33
-}
-
-/* PAGINA ENSAMBLES */
-
-/* Section Ensambles */
-
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px; }
+  .linkcatalogo:hover {
+    color: #3c9e33; }
 
 .contenedorcatalogo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
 .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.863),
-            rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/banner.webp);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    color: white;
-    text-shadow: 1px 1px 5px #12be02a9;
-    border-radius: 0;
-    margin-bottom: 20px;
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/banner.webp);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+  text-shadow: 1px 1px 5px #12be02a9;
+  border-radius: 0;
+  margin-bottom: 20px; }
 
 .jumbotitle {
-    text-align: center;
-    text-transform: capitalize;
-    font-style: oblique;
-    font-size: 24px;
-    margin-top: 30px;
-}
+  text-align: center;
+  text-transform: capitalize;
+  font-style: oblique;
+  font-size: 24px;
+  margin-top: 30px; }
 
 .jumbodescript {
-    text-align: center;
-    font-size: 16px;
-    padding: 20px;
-}
+  text-align: center;
+  font-size: 16px;
+  padding: 20px; }
 
 .container-fluid {
-    max-width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; }
 
 .contenedorequipo {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 30px;
-
-}
-
-.contenedorequipo figure {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px; }
+  .contenedorequipo figure {
     position: relative;
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
     box-shadow: 0 0 10px 2px;
     cursor: pointer;
-    margin: 0;
-}
-
-.contenedorequipo figure img {
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-in-out;
-}
-
-.contenedorequipo figure .descripcioncapa {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-
-.contenedorequipo figure:hover>.descripcioncapa {
-    opacity: 1;
-    visibility: visible;
-}
-
-.contenedorequipo figure:hover>.descripcioncapa h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.contenedorequipo figure .descripcioncapa h3 {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 15px;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-    text-shadow: 0 0 5px rgb(43, 255, 0);
-
-}
-
-.contenedorequipo figure .descripcioncapa p {
-    color: white;
-    font-size: 14px;
-    width: 100%;
-    max-width: 270px;
-    text-align: inherit;
-    margin: auto;
-    text-shadow: 0 0 5px black;
-
-}
-
-.contenedorequipo figure .descripcioncapa p:first-line {
-    text-transform: capitalize;
-    font-size: 20px;
-    text-shadow: 0 0 5px rgb(43, 255, 0);
-
-}
-
-.contenedorequipo figure:hover>img {
-    transform: scale(1.3);
-}
-
-
-/* PAGINA CONTACTO */
-
-/* Main Contacto */
-
+    margin: 0; }
+    .contenedorequipo figure img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-in-out; }
+    .contenedorequipo figure .descripcioncapa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+      .contenedorequipo figure .descripcioncapa h3 {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 120px;
+        transition: all 500ms ease-out;
+        margin-top: 30px;
+        text-shadow: 0 0 5px #2bff00; }
+      .contenedorequipo figure .descripcioncapa p {
+        color: white;
+        font-size: 14px;
+        width: 100%;
+        max-width: 270px;
+        text-align: inherit;
+        margin: auto;
+        text-shadow: 0 0 5px black; }
+        .contenedorequipo figure .descripcioncapa p:first-line {
+          text-transform: capitalize;
+          font-size: 20px;
+          text-shadow: 0 0 5px #2bff00; }
+    .contenedorequipo figure:hover > .descripcioncapa {
+      opacity: 1;
+      visibility: visible; }
+      .contenedorequipo figure:hover > .descripcioncapa h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px; }
+    .contenedorequipo figure:hover > img {
+      transform: scale(1.3); }
 
 .tituloform h1 {
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    text-shadow: 0 0 12px #3c9e33;
-}
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 12px #3c9e33; }
 
 .tituloform h2 {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    text-shadow: 0 0 12px #3c9e33;
-}
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 12px #3c9e33; }
 
 .bodycontacto {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.863),
-            rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/fondocontacto.jpg);
-    background-size: cover;
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/fondocontacto.jpg);
+  background-size: cover; }
 
 .footercontact {
-    margin-top: auto;
-}
+  margin-top: auto; }
 
 .contenedorform {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
 .form-register {
-    width: 300px;
-    height: 600px;
-    background: #121212;
-    padding: 15px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    border-radius: 4px;
-    font-family: 'montserrat';
-    color: white;
-    box-shadow: 2px 2px 30px 0px #000000;
-}
-
-.form-register .botons {
+  width: 300px;
+  height: 600px;
+  background: #121212;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  font-family: 'montserrat';
+  color: white;
+  box-shadow: 2px 2px 30px 0px #000000; }
+  .form-register .botons {
     width: 100%;
     background: #3c9e33;
     border: none;
@@ -468,77 +335,56 @@ small {
     color: white;
     margin: 5px 0;
     font-size: 16px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.form-register h2 {
+    transition: transform 0.3s ease-in-out; }
+    .form-register .botons:hover {
+      cursor: pointer;
+      filter: opacity(0.9);
+      transform: scale(1.04); }
+  .form-register h2 {
     font-size: 22px;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.form-register h2::after {
-    content: " 🙂";
-}
+    margin-bottom: 20px; }
+    .form-register h2::after {
+      content: " 🙂"; }
 
 input::placeholder {
-    color: #3c9e3396;
-}
-
-textarea::placeholder {
-    color: #3c9e3396;
-}
-
-.controls {
-    width: 100%;
-    background: #3c9e3327;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    border: 1px solid #3c9e33;
-    font-size: 14px;
-    color: white;
-
-}
-
-.form-register .botons:hover {
-    cursor: pointer;
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
+  color: #3c9e3396; }
 
 textarea {
-    resize: none;
-    max-height: 200px;
-    min-height: 200px;
-    max-width: 300px;
-}
+  resize: none;
+  max-height: 200px;
+  min-height: 200px;
+  max-width: 300px; }
+  textarea::placeholder {
+    color: #3c9e3396; }
 
-.controls:focus {
-    outline: solid 1px white;
-}
-
-/* PAGFINA PROCESADORES */
+.controls {
+  width: 100%;
+  background: #3c9e3327;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #3c9e33;
+  font-size: 14px;
+  color: white; }
+  .controls:focus {
+    outline: solid 1px white; }
 
 .h1proce {
-    color: #000000;
-    font-weight: 900;
-    text-shadow: 2px 2px 1px #0000005e;
-    font-size: 30px;
-    font-style: oblique;
-    margin-top: 50px;
-    text-align: center;
-}
+  color: #000000;
+  font-weight: 900;
+  text-shadow: 2px 2px 1px #0000005e;
+  font-size: 30px;
+  font-style: oblique;
+  margin-top: 50px;
+  text-align: center; }
 
 .containerprocesadores {
-
-    max-width: 100vw;
-    max-height: 100%;
-    margin: 10%;
-    text-align: center;
-}
-
-.containerprocesadores h2 {
+  max-width: 100vw;
+  max-height: 100%;
+  margin: 10%;
+  text-align: center; }
+  .containerprocesadores h2 {
     margin-top: 60px;
     margin-bottom: 20px;
     padding: 4px;
@@ -549,706 +395,410 @@ textarea {
     border-radius: 4px;
     border-color: #3c9e33;
     background-color: #121212;
-    color: #ffffff;
-}
+    color: #ffffff; }
 
 .ulintel {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.ulintel li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+  .ulintel li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
     height: 230px;
     width: 210px;
     border: #3c9e33 solid 1px;
     margin: 5% 0;
-    transition: transform 0.3s ease-in-out
-}
-
-.ulintel li:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
-.ulintel li p {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.ulintel li img {
-    margin-top: 10px;
-}
+    transition: transform 0.3s ease-in-out; }
+    .ulintel li:hover {
+      filter: opacity(0.9);
+      transform: scale(1.04); }
+    .ulintel li p {
+      margin-top: 10px;
+      margin-bottom: 0; }
+    .ulintel li img {
+      margin-top: 10px; }
 
 .ulamd {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.ulamd li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+  .ulamd li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
     height: 230px;
     width: 210px;
     border: #3c9e33 solid 1px;
     margin: 5% 0;
-    transition: transform 0.3s ease-in-out
-}
-
-.ulamd li:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
-.ulamd li p {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.ulamd li img {
-    margin-top: 10px;
-}
+    transition: transform 0.3s ease-in-out; }
+    .ulamd li:hover {
+      filter: opacity(0.9);
+      transform: scale(1.04); }
+    .ulamd li p {
+      margin-top: 10px;
+      margin-bottom: 0; }
+    .ulamd li img {
+      margin-top: 10px; }
 
 .itemproce {
-    height: 10em;
-    width: auto;
-}
-
-/*___________________________MEDIA QUERIES_________________________*/
-
-/*---------------------------media para tablet------------------------------*/
+  height: 10em;
+  width: auto; }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
-
-    /* PAGINA INDEX */
-
-    .navbar-toggler {
-        margin-right: 8%;
-    }
-
-    .navbar-collapse {
-        justify-content: end;
-        margin-left: 10%;
-    }
-
-    .navbar-nav {
-        margin-right: 8%;
-    }
-
-    .navbar-item {
-        margin: 0 7px;
-    }
-
-    .divpadredestacados {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
-    }
-
-    header {
-        position: fixed;
-    }
-
-    .container {
-        margin-top: 50px;
-    }
-
-    .navbar__1 {
-        margin-left: 7%;
-    }
-
-    .navbar-link {
-        font-size: 12px;
-    }
-
-    .header__logotechpc {
-        padding: 0px 20px;
-    }
-
-    /* PAGINA CATALOGO */
-
-    .contenedorpadrecatalogo {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .imagescatalogo {
-        height: 230px;
-        width: 230px;
-    }
-
-    .art {
-        justify-content: center;
-        margin-top: 5%;
-        display: flex;
-        height: 280px;
-        width: 280px;
-    }
-
-    .arttitle {
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .catalogo {
-        margin-top: 80px;
-        text-align: center;
-        font-size: 24px;
-    }
-
-    .linkcatalogo {
-        margin-top: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 250px;
-        width: 250px;
-    }
-
-
-    /* PAGINA ENSAMBLES GAMER */
-
-
-    .jumbotron {
-        height: 400px;
-        max-width: 100%;
-    }
-
-    .jumbotitle {
-        margin-top: 20%;
-    }
-
-    .jumbodescript {
-        font-size: 18px;
-    }
-
-    .container-fluid {
-        max-width: 700px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        height: auto;
-    }
-
-    .contenedorequipo {
-        width: 300px;
-        height: auto;
-        margin-bottom: 30px;
-    }
-
-    /* PAGINA CONTACTO */
-
-    .tituloform {
-        margin-top: 30px;
-    }
-
+  .navbar-toggler {
+    margin-right: 8%; }
+  .navbar-collapse {
+    justify-content: end;
+    margin-left: 10%; }
+  .navbar-nav {
+    margin-right: 8%; }
+  .navbar-item {
+    margin: 0 7px; }
+  .divpadredestacados {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto; }
+  header {
+    position: fixed; }
+  .container {
+    margin-top: 50px; }
+  .navbar__1 {
+    margin-left: 7%; }
+  .navbar-link {
+    font-size: 12px; }
+  .header__logotechpc {
+    padding: 0px 20px; }
+  .contenedorpadrecatalogo {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .imagescatalogo {
+    height: 230px;
+    width: 230px; }
+  .art {
+    justify-content: center;
+    margin-top: 5%;
+    display: flex;
+    height: 280px;
+    width: 280px; }
+  .arttitle {
+    text-align: center;
+    font-size: 18px; }
+  .catalogo {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 24px; }
+  .linkcatalogo {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 250px; }
+  .jumbotron {
+    height: 400px;
+    max-width: 100%; }
+  .jumbotitle {
+    margin-top: 20%; }
+  .jumbodescript {
+    font-size: 18px; }
+  .container-fluid {
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto; }
+  .contenedorequipo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px; }
+  .tituloform {
+    margin-top: 30px; }
     .tituloform h1 {
-        font-size: 26px;
-    }
-
+      font-size: 26px; }
     .tituloform h2 {
-        font-size: 22px;
-    }
-
-    /* PAGFINA PROCESADORES */
-
-    .h1proce {
-        margin-top: 90px;
-    }
-
-    .containerprocesadores {
-
-        max-width: 100vw;
-        max-height: 100%;
-        margin: 10%;
-        text-align: center;
-    }
-
-    .ulintel {
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-
+      font-size: 22px; }
+  .h1proce {
+    margin-top: 90px; }
+  .containerprocesadores {
+    max-width: 100vw;
+    max-height: 100%;
+    margin: 10%;
+    text-align: center; }
+  .ulintel {
+    flex-direction: row;
+    justify-content: space-around; }
     .ulintel li {
-        height: 300px;
-        width: 280px;
-    }
-
-    .ulintel li p {
+      height: 300px;
+      width: 280px; }
+      .ulintel li p {
         margin-top: 10px;
-        margin-bottom: 0;
-    }
-
-    .ulintel li img {
-        margin-top: 10px;
-    }
-
-    .ulamd {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+        margin-bottom: 0; }
+      .ulintel li img {
+        margin-top: 10px; }
+  .ulamd {
+    flex-direction: row;
+    justify-content: space-around; }
     .ulamd li {
-        height: 300px;
-        width: 280px;
-    }
-
-    .ulamd li p {
+      height: 300px;
+      width: 280px; }
+      .ulamd li p {
         margin-top: 10px;
-        margin-bottom: 0;
-    }
-
-    .ulamd li img {
-        margin-top: 10px;
-    }
-
-    .itemproce {
-        height: 14em;
-        width: auto;
-    }
-}
-
-
-/*-------------------------media para laptop------------------------*/
-
-/*INDEX*/
+        margin-bottom: 0; }
+      .ulamd li img {
+        margin-top: 10px; }
+  .itemproce {
+    height: 14em;
+    width: auto; } }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .navbar-collapse {
-        justify-content: end
-    }
-
-    .navbar-nav {
-        margin-right: 14%;
-    }
-
-    .navbar-item {
-        margin: 0 15px;
-    }
-
-    .navbar-link {
-        font-size: 15px;
-    }
-
-    .divpadredestacados {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-    }
-
-    header {
-        position: fixed;
-    }
-
-    .container {
-        margin-top: 50px;
-    }
-
-    .navbar__1 {
-        margin-left: 10%;
-    }
-
-    .d {
-        margin-bottom: 8%;
-    }
-
-    /*CATALOGO*/
-
-    .imagescatalogo {
-        height: 270px;
-        width: 270px;
-    }
-
-    .art {
-        height: 320px;
-        width: 320px;
-    }
-
-    .arttitle {
-        font-size: 20px;
-    }
-
-    .catalogo {
-        margin-top: 80px;
-        font-size: 25px;
-    }
-
-    .linkcatalogo {
-        height: 320px;
-        width: 320px;
-    }
-
-    /* PAGINA ENSAMBLES GAMER */
-
-
-    .jumbotron {
-        height: 400px;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .jumbotitle {
-        margin-top: 5%;
-    }
-
-    .jumbodescript {
-        text-align: center;
-        font-size: 20px;
-        width: 60%;
-
-    }
-
-    .container-fluid {
-        max-width: 1024px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-
-    }
-
-    .contenedorequipo {
-        width: 300px;
-        height: auto;
-        margin-bottom: 30px;
-        margin-left: 15px;
-        margin-right: 15px
-    }
-
-    /* PAGINA CONTACTO */
-
-
-    .tituloform h1 {
-        font-size: 26px;
-    }
-
-    .tituloform h2 {
-        font-size: 22px;
-    }
-
-    .form-register {
-        width: 600px;
-        height: 500px;
-    }
-
-    textarea {
-        max-height: 100px;
-        min-height: 100px;
-        max-width: 600px;
-    }
-
-    .contenedorform {
-        margin-bottom: 200px;
-    }
-
-    /* PAGFINA PROCESADORES */
-
-    .h1proce {
-        margin-top: 120px;
-    }
-
-    .containerprocesadores {
-
-        max-width: 100vw;
-        max-height: 100%;
-        margin: 10%;
-        text-align: center;
-    }
-
-    .ulintel {
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-
+  .navbar-collapse {
+    justify-content: end; }
+  .navbar-nav {
+    margin-right: 14%; }
+  .navbar-item {
+    margin: 0 15px; }
+  .navbar-link {
+    font-size: 15px; }
+  .divpadredestacados {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto; }
+  header {
+    position: fixed; }
+  .container {
+    margin-top: 50px; }
+  .navbar__1 {
+    margin-left: 10%; }
+  .d {
+    margin-bottom: 8%; }
+  .imagescatalogo {
+    height: 270px;
+    width: 270px; }
+  .art {
+    height: 320px;
+    width: 320px; }
+  .arttitle {
+    font-size: 20px; }
+  .catalogo {
+    margin-top: 80px;
+    font-size: 25px; }
+  .linkcatalogo {
+    height: 320px;
+    width: 320px; }
+  .jumbotron {
+    height: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .jumbotitle {
+    margin-top: 5%; }
+  .jumbodescript {
+    text-align: center;
+    font-size: 20px;
+    width: 60%; }
+  .container-fluid {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+  .contenedorequipo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .tituloform h1 {
+    font-size: 26px; }
+  .tituloform h2 {
+    font-size: 22px; }
+  .form-register {
+    width: 600px;
+    height: 500px; }
+  textarea {
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 600px; }
+  .contenedorform {
+    margin-bottom: 200px; }
+  .h1proce {
+    margin-top: 120px; }
+  .containerprocesadores {
+    max-width: 100vw;
+    max-height: 100%;
+    margin: 10%;
+    text-align: center; }
+  .ulintel {
+    flex-direction: row;
+    justify-content: space-around; }
     .ulintel li {
-        height: 300px;
-        width: 280px;
-    }
-
-    .ulintel li p {
+      height: 300px;
+      width: 280px; }
+      .ulintel li p {
         margin-top: 10px;
-        margin-bottom: 0;
-    }
-
-    .ulintel li img {
-        margin-top: 10px;
-    }
-
-    .ulamd {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+        margin-bottom: 0; }
+      .ulintel li img {
+        margin-top: 10px; }
+  .ulamd {
+    flex-direction: row;
+    justify-content: space-around; }
     .ulamd li {
-        height: 300px;
-        width: 280px;
-    }
-
-    .ulamd li p {
+      height: 300px;
+      width: 280px; }
+      .ulamd li p {
         margin-top: 10px;
-        margin-bottom: 0;
-    }
-
-    .ulamd li img {
-        margin-top: 10px;
-    }
-
-    .itemproce {
-        height: 14em;
-        width: auto;
-    }
-}
-
-/*---------------------------media para desktop------------------------*/
-
-/*INDEX*/
+        margin-bottom: 0; }
+      .ulamd li img {
+        margin-top: 10px; }
+  .itemproce {
+    height: 14em;
+    width: auto; } }
 
 @media screen and (min-width: 1025px) {
-    .navbar-collapse {
-        justify-content: end
-    }
-
-    .navbar-nav {
-        margin-right: 18%;
-    }
-
-    .navbar-item {
-        margin: 0 15px;
-    }
-
-    .navbar-link {
-        font-size: 18px;
-    }
-
-    .divpadredestacados {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-    }
-
-    header {
-        position: fixed;
-    }
-
-    .container {
-        margin-top: 50px;
-    }
-
-    .navbar__1 {
-        margin-left: 10%;
-    }
-
-    .d {
-        margin-bottom: 8%;
-    }
-
-    .descripciondestacados {
-        margin: 10px 65px
-    }
-
-    .header__logotechpc {
-        padding: 0px 60px;
-    }
-
-    /*CATALOGO*/
-
-    .contenedorpadrecatalogo {
-        margin-top: 30px;
-    }
-
-    .imagescatalogo {
-        height: 300px;
-        width: 320px;
-    }
-
-    .art {
-        margin: 0;
-        height: 400px;
-        width: 400px;
-    }
-
-    .arttitle {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .catalogo {
-        margin-top: 80px;
-        text-align: center;
-        font-size: 26px;
-    }
-
-    .linkcatalogo {
-        height: 350px;
-        width: 400px;
-    }
-
-    /* PAGINA ENSAMBLES GAMER */
-
-
-    .jumbotron {
-        height: 550px;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .jumbotitle {
-        font-size: 36px;
-        margin-top: 5%;
-        text-align: left;
-        margin-left: 5%;
-    }
-
-    .jumbodescript {
-        text-align: start;
-        font-size: 26px;
-        width: 60%;
-        margin-left: 3%;
-
-    }
-
-    .container-fluid {
-        max-width: 1500px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-
-    .contenedorequipo {
-        width: 300px;
-        height: auto;
-        margin-bottom: 30px;
-        margin-left: 20px;
-        margin-right: 20px
-    }
-
-    /* PAGINA CONTACTO */
-
-    .tituloform h1 {
-        margin-top: -2%;
-        font-size: 30px;
-    }
-
-    .tituloform h2 {
-        font-size: 25px;
-    }
-
-    .form-register {
-        width: 600px;
-        height: 500px;
-    }
-
-    .contenedorform {
-        margin-bottom: 200px;
-    }
-
-    textarea {
-        max-height: 100px;
-        min-height: 100px;
-        max-width: 600px;
-    }
-
-    /* PAGFINA PROCESADORES */
-
-    .h1proce {
-        margin-top: 120px;
-    }
-
-    .containerprocesadores {
-
-        max-width: 100vw;
-        max-height: 100%;
-        margin: 10%;
-        text-align: center;
-    }
-
+  .navbar-collapse {
+    justify-content: end; }
+  .navbar-nav {
+    margin-right: 18%; }
+  .navbar-item {
+    margin: 0 15px; }
+  .navbar-link {
+    font-size: 18px; }
+  .divpadredestacados {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto; }
+  header {
+    position: fixed; }
+  .container {
+    margin-top: 50px; }
+  .navbar__1 {
+    margin-left: 10%; }
+  .d {
+    margin-bottom: 8%; }
+  .descripciondestacados {
+    margin: 10px 65px; }
+  .header__logotechpc {
+    padding: 0px 60px; }
+  .contenedorpadrecatalogo {
+    margin-top: 30px; }
+  .imagescatalogo {
+    height: 300px;
+    width: 320px; }
+  .art {
+    margin: 0;
+    height: 400px;
+    width: 400px; }
+  .arttitle {
+    text-align: center;
+    font-size: 20px; }
+  .catalogo {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 26px; }
+  .linkcatalogo {
+    height: 350px;
+    width: 400px; }
+  .jumbotron {
+    height: 550px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .jumbotitle {
+    font-size: 36px;
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 5%; }
+  .jumbodescript {
+    text-align: start;
+    font-size: 26px;
+    width: 60%;
+    margin-left: 3%; }
+  .container-fluid {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+  .contenedorequipo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .tituloform h1 {
+    margin-top: -2%;
+    font-size: 30px; }
+  .tituloform h2 {
+    font-size: 25px; }
+  .form-register {
+    width: 600px;
+    height: 500px; }
+  .contenedorform {
+    margin-bottom: 200px; }
+  textarea {
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 600px; }
+  .h1proce {
+    margin-top: 120px; }
+  .containerprocesadores {
+    max-width: 100vw;
+    max-height: 100%;
+    margin: 10%;
+    text-align: center; }
     .containerprocesadores h2 {
-        margin-top: -80px;
-    }
-
-    .ulintel {
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-
+      margin-top: -80px; }
+      .containerprocesadores h2:last-of-type {
+        margin-top: 20px; }
+      .containerprocesadores h2:first-of-type {
+        margin-top: -50px; }
+  .ulintel {
+    flex-direction: row;
+    justify-content: space-around; }
     .ulintel li {
-        margin: 20px 10px;
-        height: 280px;
-        width: 250px;
-    }
-
-    .containerprocesadores h2:last-of-type {
-        margin-top: 20px;
-    }
-
-    .containerprocesadores h2:first-of-type {
-        margin-top: -50px;
-    }
-
-    .ulintel li p {
+      margin: 20px 10px;
+      height: 280px;
+      width: 250px; }
+      .ulintel li p {
         margin-top: 10px;
-        margin-bottom: 0;
-    }
-
-    .ulintel li img {
-        margin-top: 10px;
-    }
-
-    .ulamd {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+        margin-bottom: 0; }
+      .ulintel li img {
+        margin-top: 10px; }
+  .ulamd {
+    flex-direction: row;
+    justify-content: space-around; }
     .ulamd li {
-        margin: 20px 0px;
-        height: 280px;
-        width: 250px;
-    }
-
-    .ulamd li p {
+      margin: 20px 0px;
+      height: 280px;
+      width: 250px; }
+      .ulamd li p {
         margin-top: 10px;
-        margin-bottom: 0;
-    }
-
-    .ulamd li img {
-        margin-top: 10px;
-    }
-
-    .itemproce {
-        height: 14em;
-        width: auto;
-    }
-}
+        margin-bottom: 0; }
+      .ulamd li img {
+        margin-top: 10px; }
+  .itemproce {
+    height: 14em;
+    width: auto; } }

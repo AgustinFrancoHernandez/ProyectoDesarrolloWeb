@@ -1,0 +1,103 @@
+.contenedorcatalogo {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.jumbotron {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/banner.webp);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	color: white;
+	text-shadow: 1px 1px 5px #12be02a9;
+	border-radius: 0;
+	margin-bottom: 20px;
+}
+.jumbotitle {
+	text-align: center;
+	text-transform: capitalize;
+	font-style: oblique;
+	font-size: 24px;
+	margin-top: 30px;
+}
+.jumbodescript {
+	text-align: center;
+	font-size: 16px;
+	padding: 20px;
+}
+.container-fluid {
+	max-width: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+.contenedorequipo {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 30px;
+	figure {
+		position: relative;
+		max-width: 100%;
+		max-height: 100%;
+		overflow: hidden;
+		box-shadow: 0 0 10px 2px;
+		cursor: pointer;
+		margin: 0;
+		img {
+			width: 100%;
+			height: 100%;
+			transition: all 500ms ease-in-out;
+		}
+		.descripcioncapa {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.7);
+			opacity: 0;
+			visibility: hidden;
+			text-align: center;
+			h3 {
+				color: #ffffff;
+				font-weight: 400;
+				font-size: 15px;
+				margin-bottom: 120px;
+				transition: all 500ms ease-out;
+				margin-top: 30px;
+				text-shadow: 0 0 5px rgb(43, 255, 0);
+			}
+			p {
+				color: white;
+				font-size: 14px;
+				width: 100%;
+				max-width: 270px;
+				text-align: inherit;
+				margin: auto;
+				text-shadow: 0 0 5px black;
+				&:first-line {
+					text-transform: capitalize;
+					font-size: 20px;
+					text-shadow: 0 0 5px rgb(43, 255, 0);
+				}
+			}
+		}
+		&:hover {
+			>.descripcioncapa {
+				opacity: 1;
+				visibility: visible;
+				h3 {
+					margin-top: 10px;
+					margin-bottom: 10px;
+					font-size: 15px;
+				}
+			}
+			>img {
+				transform: scale(1.3);
+			}
+		}
+	}
+}
