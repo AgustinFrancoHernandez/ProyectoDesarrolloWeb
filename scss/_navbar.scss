@@ -7,13 +7,18 @@
 	justify-content: center;
 	align-items: center;
 }
+.navbar-item {
+	margin: 2px 0;
+}
 .navbar-link {
+	
+	font-size: 1rem;
 	text-decoration: none;
 	color: white;
 	border-radius: 2px;
-	padding: 5px;
+	padding: 2px;
 	&:hover {
-		background-color: #3c9e33;
+		background-color: $color1;
 		transition: 0.5s;
 		color: white;
 	}

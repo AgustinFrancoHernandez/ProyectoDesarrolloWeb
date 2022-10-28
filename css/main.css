@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 * {
   box-sizing: border-box;
+  font-size: 62.5%;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif; }
@@ -34,11 +35,15 @@ footer {
   justify-content: center;
   align-items: center; }
 
+.navbar-item {
+  margin: 2px 0; }
+
 .navbar-link {
+  font-size: 1rem;
   text-decoration: none;
   color: white;
   border-radius: 2px;
-  padding: 5px; }
+  padding: 2px; }
   .navbar-link:hover {
     background-color: #3c9e33;
     transition: 0.5s;
@@ -53,35 +58,38 @@ footer {
   height: 100%;
   width: 100%; }
 
-.footer__imgig {
-  transition: all 0.3s ease;
-  height: 35px;
-  width: auto; }
-  .footer__imgig:hover {
-    filter: opacity(0.9);
-    transform: scale(0.9); }
-
-.footer__imgf {
-  transition: all 0.3s ease;
-  height: 30px;
-  width: auto; }
-  .footer__imgf:hover {
-    filter: opacity(0.9);
-    transform: scale(0.9); }
-
 .footercontent {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center; }
-
-.footertext {
-  color: white; }
-
-small {
-  margin-top: 10px;
-  color: white; }
+  .footercontent div:first-of-type {
+    margin-top: 5px; }
+    .footercontent div:first-of-type p {
+      font-size: 1.7rem;
+      color: white;
+      margin-bottom: 5px; }
+  .footercontent div:last-of-type {
+    padding: 2px; }
+    .footercontent div:last-of-type .footer__imgig {
+      transition: all 0.3s ease;
+      height: 35px;
+      width: auto; }
+      .footercontent div:last-of-type .footer__imgig:hover {
+        filter: opacity(0.9);
+        transform: scale(0.9); }
+    .footercontent div:last-of-type .footer__imgf {
+      transition: all 0.3s ease;
+      height: 30px;
+      width: auto; }
+      .footercontent div:last-of-type .footer__imgf:hover {
+        filter: opacity(0.9);
+        transform: scale(0.9); }
+  .footercontent small {
+    font-size: 0.8rem;
+    margin: 5px 0;
+    color: white; }
 
 .section {
   height: 100%;
@@ -89,7 +97,7 @@ small {
 
 .titulodestacados {
   text-align: center;
-  font-size: 120%;
+  font-size: calc(1rem + 1.4vw);
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 4px;
@@ -113,7 +121,7 @@ small {
   width: auto; }
 
 .descripcionportada {
-  font-size: 20px;
+  font-size: 2.2rem;
   text-align: center;
   padding: 5px 20px; }
   .descripcionportada::after {
@@ -128,7 +136,8 @@ small {
 
 .descripciondestacados {
   text-align: center;
-  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
   margin: 10px 7px; }
 
 .divpadredestacados-item {
@@ -418,6 +427,7 @@ textarea {
       filter: opacity(0.9);
       transform: scale(1.04); }
     .ulintel li p {
+      font-size: 1.7rem;
       margin-top: 10px;
       margin-bottom: 0; }
     .ulintel li img {
@@ -444,13 +454,14 @@ textarea {
       filter: opacity(0.9);
       transform: scale(1.04); }
     .ulamd li p {
+      font-size: 1.6rem;
       margin-top: 10px;
       margin-bottom: 0; }
     .ulamd li img {
       margin-top: 10px; }
 
 .itemproce {
-  height: 10em;
+  height: 14rem;
   width: auto; }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -547,10 +558,11 @@ textarea {
       height: 300px;
       width: 280px; }
       .ulintel li p {
-        margin-top: 10px;
+        font-size: 2.1rem;
+        margin-top: 2rem;
         margin-bottom: 0; }
       .ulintel li img {
-        margin-top: 10px; }
+        margin-top: 2rem; }
   .ulamd {
     flex-direction: row;
     justify-content: space-around; }
@@ -558,12 +570,13 @@ textarea {
       height: 300px;
       width: 280px; }
       .ulamd li p {
-        margin-top: 10px;
+        font-size: 2.1rem;
+        margin-top: 2rem;
         margin-bottom: 0; }
       .ulamd li img {
-        margin-top: 10px; }
+        margin-top: 2rem; }
   .itemproce {
-    height: 14em;
+    height: 19rem;
     width: auto; } }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -655,10 +668,11 @@ textarea {
       height: 300px;
       width: 280px; }
       .ulintel li p {
-        margin-top: 10px;
+        font-size: 2.1rem;
+        margin-top: 2rem;
         margin-bottom: 0; }
       .ulintel li img {
-        margin-top: 10px; }
+        margin-top: 2rem; }
   .ulamd {
     flex-direction: row;
     justify-content: space-around; }
@@ -666,12 +680,13 @@ textarea {
       height: 300px;
       width: 280px; }
       .ulamd li p {
-        margin-top: 10px;
+        font-size: 2.1rem;
+        margin-top: 2rem;
         margin-bottom: 0; }
       .ulamd li img {
-        margin-top: 10px; }
+        margin-top: 2rem; }
   .itemproce {
-    height: 14em;
+    height: 19rem;
     width: auto; } }
 
 @media screen and (min-width: 1025px) {
@@ -779,26 +794,26 @@ textarea {
     flex-direction: row;
     justify-content: space-around; }
     .ulintel li {
-      margin: 20px 10px;
-      height: 280px;
-      width: 250px; }
+      height: 300px;
+      width: 280px; }
       .ulintel li p {
-        margin-top: 10px;
+        font-size: 2.1rem;
+        margin-top: 2rem;
         margin-bottom: 0; }
       .ulintel li img {
-        margin-top: 10px; }
+        margin-top: 2rem; }
   .ulamd {
     flex-direction: row;
     justify-content: space-around; }
     .ulamd li {
-      margin: 20px 0px;
-      height: 280px;
-      width: 250px; }
+      height: 300px;
+      width: 280px; }
       .ulamd li p {
-        margin-top: 10px;
+        font-size: 2.1rem;
+        margin-top: 2rem;
         margin-bottom: 0; }
       .ulamd li img {
-        margin-top: 10px; }
+        margin-top: 2rem; }
   .itemproce {
-    height: 14em;
+    height: 19rem;
     width: auto; } }
