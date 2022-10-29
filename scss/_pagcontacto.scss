@@ -1,93 +1,103 @@
-.tituloform {
-	h1 {
-		text-align: center;
-		font-size: 25px;
-		color: white;
-		text-shadow: 0 0 12px $color1;
-	}
-	h2 {
-		margin-left: 10px;
-		margin-right: 10px;
-		text-align: center;
-		font-size: 20px;
-		color: white;
-		text-shadow: 0 0 12px $color1;
-	}
-}
 .bodycontacto {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/fondocontacto.jpg);
 	background-size: cover;
-}
-.footercontact {
-	margin-top: auto;
-}
-.contenedorform {
-	margin-top: 10%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-.form-register {
-	width: 300px;
-	height: 600px;
-	background: $color2;
-	padding: 15px;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	border-radius: 4px;
-	font-family: 'montserrat';
-	color: white;
-	box-shadow: 2px 2px 30px 0px #000000;
-	.botons {
-		width: 100%;
-		background: $color1;
-		border: none;
-		padding: 12px;
-		color: white;
-		margin: 5px 0;
-		font-size: 16px;
-		transition: transform 0.3s ease-in-out;
-		&:hover {
-			cursor: pointer;
-			filter: opacity(0.9);
-			transform: scale(1.04);
+
+	.contenedorform {
+		margin-top: 10%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		.tituloform {
+			h1 {
+				text-align: center;
+				font-size: 25px;
+				color: white;
+				text-shadow: 0 0 12px $color1;
+			}
+
+			h2 {
+				margin-left: 10px;
+				margin-right: 10px;
+				text-align: center;
+				font-size: 20px;
+				color: white;
+				text-shadow: 0 0 12px $color1;
+			}
 		}
-	}
-	h2 {
-		font-size: 22px;
-		text-align: center;
-		margin-bottom: 20px;
-		&::after {
-			content: " 🙂";
+
+		.form-register {
+			width: 300px;
+			height: 600px;
+			background: $color2;
+			padding: 15px;
+			margin-top: 30px;
+			margin-bottom: 50px;
+			border-radius: 4px;
+			font-family: 'montserrat';
+			color: white;
+			box-shadow: 2px 2px 30px 0px #000000;
+
+			h2 {
+				font-size: 22px;
+				text-align: center;
+				margin-bottom: 20px;
+
+				&::after {
+					content: " 🙂";
+				}
+			}
+
+			input {
+				&::placeholder {
+					color: $color3;
+				}
+			}
+
+			textarea {
+				&::placeholder {
+					color: $color3;
+				}
+
+				resize: none;
+				max-height: 200px;
+				min-height: 200px;
+				max-width: 300px;
+			}
+
+			.controls {
+				width: 100%;
+				background: $color4;
+				padding: 10px;
+				border-radius: 4px;
+				margin-bottom: 15px;
+				border: 1px solid $color1;
+				font-size: 14px;
+				color: white;
+
+				&:focus {
+					outline: solid 1px white;
+				}
+			}
+
+			.botons {
+				width: 100%;
+				background: $color1;
+				border: none;
+				padding: 12px;
+				color: white;
+				margin: 5px 0;
+				font-size: 16px;
+				transition: transform 0.3s ease-in-out;
+
+				&:hover {
+					cursor: pointer;
+					filter: opacity(0.9);
+					transform: scale(1.04);
+				}
+			}
 		}
-	}
-}
-input {
-	&::placeholder {
-		color: $color3;
-	}
-}
-textarea {
-	&::placeholder {
-		color: $color3;
-	}
-	resize: none;
-	max-height: 200px;
-	min-height: 200px;
-	max-width: 300px;
-}
-.controls {
-	width: 100%;
-	background: $color4;
-	padding: 10px;
-	border-radius: 4px;
-	margin-bottom: 15px;
-	border: 1px solid $color1;
-	font-size: 14px;
-	color: white;
-	&:focus {
-		outline: solid 1px white;
 	}
 }
