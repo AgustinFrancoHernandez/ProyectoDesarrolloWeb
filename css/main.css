@@ -38,7 +38,7 @@ footer {
     .navbar .navbar-nav .navbar-item {
       margin: 2px 0; }
       .navbar .navbar-nav .navbar-item .navbar-link {
-        font-size: 1rem;
+        font-size: 1.4rem;
         text-decoration: none;
         color: white;
         border-radius: 2px;
@@ -426,8 +426,6 @@ footer {
         margin-right: 8%; }
         header .navbar-collapse .navbar-nav .navbar-item {
           margin: 0 7px; }
-          header .navbar-collapse .navbar-nav .navbar-item .navbar-link {
-            font-size: 12px; }
   .container {
     margin-top: 50px; }
     .container .divpadredestacados, .container .section .divpadredestacados .divpadredestacados-item, .section .divpadredestacados .container .divpadredestacados-item {
