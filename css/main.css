@@ -36,9 +36,9 @@ footer {
     justify-content: center;
     align-items: center; }
     .navbar .navbar-nav .navbar-item {
-      margin: 2px 0; }
+      margin: 3px 0; }
       .navbar .navbar-nav .navbar-item .navbar-link {
-        font-size: 1.4rem;
+        font-size: 17px;
         text-decoration: none;
         color: white;
         border-radius: 2px;
@@ -539,8 +539,6 @@ footer {
         margin-right: 14%; }
         header .navbar-collapse .navbar-nav .navbar-item {
           margin: 0 15px; }
-          header .navbar-collapse .navbar-nav .navbar-item .navbar-link {
-            font-size: 15px; }
   .container {
     margin-top: 50px; }
     .container .divpadredestacados, .container .section .divpadredestacados .divpadredestacados-item, .section .divpadredestacados .container .divpadredestacados-item {
