@@ -88,75 +88,60 @@ footer {
 .section {
   height: 100%;
   width: 100%; }
-
-.titulodestacados {
-  text-align: center;
-  font-size: calc(1rem + 1.4vw);
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding: 4px;
-  text-shadow: 2px 2px 10px #3c9e33;
-  border-style: outset;
-  border-radius: 4px;
-  border-color: #3c9e33;
-  background-color: #121212;
-  color: #ffffff; }
-
-.divportadainicio {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin-top: 10px;
-  height: 100%;
-  width: 100%; }
-
-.divportadainicio-imgportada {
-  height: 10%;
-  width: auto; }
-
-.descripcionportada {
-  font-size: 2.2rem;
-  text-align: center;
-  padding: 5px 20px; }
-  .descripcionportada::after {
-    content: " 😎 "; }
-
-.divpadredestacados {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center; }
-
-.descripciondestacados {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 10px 7px; }
-
-.divpadredestacados-item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease-in-out; }
-  .divpadredestacados-item:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04); }
-
-.divpadredestacados-item_img {
-  height: 150px;
-  width: auto; }
-
-.container {
-  display: flex;
-  flex-direction: column; }
+  .section .container {
+    display: flex;
+    flex-direction: column; }
+    .section .container .divportadainicio {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 10px;
+      height: 100%;
+      width: 100%; }
+      .section .container .divportadainicio .divportadainicio-imgportada {
+        height: 10%;
+        width: auto; }
+      .section .container .divportadainicio .descripcionportada {
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 5px 20px; }
+        .section .container .divportadainicio .descripcionportada::after {
+          content: " 😎 "; }
+    .section .container .titulodestacados {
+      text-align: center;
+      font-size: calc(1rem + 1.4vw);
+      margin-top: 20px;
+      margin-bottom: 40px;
+      padding: 4px;
+      text-shadow: 2px 2px 10px #3c9e33;
+      border-style: outset;
+      border-radius: 4px;
+      border-color: #3c9e33;
+      background-color: #121212;
+      color: #ffffff; }
+  .section .divpadredestacados, .section .divpadredestacados .divpadredestacados-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .section .divpadredestacados .divpadredestacados-item {
+      transition: transform 0.3s ease-in-out; }
+      .section .divpadredestacados .divpadredestacados-item:hover {
+        filter: opacity(0.9);
+        transform: scale(1.04); }
+      .section .divpadredestacados .divpadredestacados-item .divpadredestacados-item_img {
+        height: 150px;
+        width: auto; }
+      .section .divpadredestacados .divpadredestacados-item .descripciondestacados {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 10px 7px; }
 
 .catalogo {
   margin-top: 6%;
-  text-align: center;
-  font-size: 100%; }
+  text-align: center; }
 
 .contenedorpadrecatalogo {
   height: auto;
@@ -188,8 +173,7 @@ footer {
       .contenedorpadrecatalogo .art .linkcatalogo:hover {
         color: #3c9e33; }
       .contenedorpadrecatalogo .art .linkcatalogo .arttitle {
-        text-align: center;
-        font-size: 80%; }
+        text-align: center; }
       .contenedorpadrecatalogo .art .linkcatalogo .imagescatalogo {
         height: 85%;
         width: auto; }
@@ -197,31 +181,28 @@ footer {
 .contenedorcatalogo {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
-
-.jumbotron {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/banner.webp);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  color: white;
-  text-shadow: 1px 1px 5px #12be02a9;
-  border-radius: 0;
-  margin-bottom: 20px; }
-
-.jumbotitle {
-  text-align: center;
-  text-transform: capitalize;
-  font-style: oblique;
-  font-size: 24px;
-  margin-top: 30px; }
-
-.jumbodescript {
-  text-align: center;
-  font-size: 16px;
-  padding: 20px; }
+  align-items: center;
+  flex-wrap: wrap; }
+  .contenedorcatalogo .jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/banner.webp);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    text-shadow: 1px 1px 5px #12be02a9;
+    border-radius: 0;
+    margin-bottom: 20px; }
+    .contenedorcatalogo .jumbotron .jumbotitle {
+      text-align: center;
+      text-transform: capitalize;
+      font-style: oblique;
+      font-size: 24px;
+      margin-top: 30px; }
+    .contenedorcatalogo .jumbotron .jumbodescript {
+      text-align: center;
+      font-size: 16px;
+      padding: 20px; }
 
 .container-fluid {
   max-width: 320px;
@@ -230,61 +211,60 @@ footer {
   justify-content: center;
   align-items: center;
   height: auto; }
-
-.contenedorequipo {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 30px; }
-  .contenedorequipo figure {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
-    box-shadow: 0 0 10px 2px;
-    cursor: pointer;
-    margin: 0; }
-    .contenedorequipo figure img {
-      width: 100%;
-      height: 100%;
-      transition: all 500ms ease-in-out; }
-    .contenedorequipo figure .descripcioncapa {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      opacity: 0;
-      visibility: hidden;
-      text-align: center; }
-      .contenedorequipo figure .descripcioncapa h3 {
-        color: #ffffff;
-        font-weight: 400;
-        font-size: 15px;
-        margin-bottom: 120px;
-        transition: all 500ms ease-out;
-        margin-top: 30px;
-        text-shadow: 0 0 5px #2bff00; }
-      .contenedorequipo figure .descripcioncapa p {
-        color: white;
-        font-size: 14px;
+  .container-fluid .contenedorequipo {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px; }
+    .container-fluid .contenedorequipo figure {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      overflow: hidden;
+      box-shadow: 0 0 10px 2px;
+      cursor: pointer;
+      margin: 0; }
+      .container-fluid .contenedorequipo figure img {
         width: 100%;
-        max-width: 270px;
-        text-align: inherit;
-        margin: auto;
-        text-shadow: 0 0 5px black; }
-        .contenedorequipo figure .descripcioncapa p:first-line {
-          text-transform: capitalize;
-          font-size: 20px;
+        height: 100%;
+        transition: all 500ms ease-in-out; }
+      .container-fluid .contenedorequipo figure .descripcioncapa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+        .container-fluid .contenedorequipo figure .descripcioncapa h3 {
+          color: #ffffff;
+          font-weight: 400;
+          font-size: 15px;
+          margin-bottom: 120px;
+          transition: all 500ms ease-out;
+          margin-top: 30px;
           text-shadow: 0 0 5px #2bff00; }
-    .contenedorequipo figure:hover > .descripcioncapa {
-      opacity: 1;
-      visibility: visible; }
-      .contenedorequipo figure:hover > .descripcioncapa h3 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 15px; }
-    .contenedorequipo figure:hover > img {
-      transform: scale(1.3); }
+        .container-fluid .contenedorequipo figure .descripcioncapa .textdes p {
+          color: white;
+          font-size: 14px;
+          width: 100%;
+          max-width: 270px;
+          text-align: inherit;
+          margin: auto;
+          text-shadow: 0 0 5px black; }
+          .container-fluid .contenedorequipo figure .descripcioncapa .textdes p:first-of-type {
+            text-transform: capitalize;
+            font-size: 20px;
+            text-shadow: 0 0 5px #2bff00; }
+      .container-fluid .contenedorequipo figure:hover > .descripcioncapa {
+        opacity: 1;
+        visibility: visible; }
+        .container-fluid .contenedorequipo figure:hover > .descripcioncapa h3 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 15px; }
+      .container-fluid .contenedorequipo figure:hover > img {
+        transform: scale(1.3); }
 
 .bodycontacto {
   background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.411)), url(../images/portadaylogo/fondocontacto.jpg);
@@ -293,9 +273,9 @@ footer {
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
     .bodycontacto .contenedorform .tituloform h1 {
       text-align: center;
       font-size: 25px;
@@ -310,7 +290,7 @@ footer {
       text-shadow: 0 0 12px #3c9e33; }
     .bodycontacto .contenedorform .form-register {
       width: 300px;
-      height: 600px;
+      height: 530px;
       background: #121212;
       padding: 15px;
       margin-top: 30px;
@@ -329,9 +309,7 @@ footer {
         color: #3c9e3396; }
       .bodycontacto .contenedorform .form-register textarea {
         resize: none;
-        max-height: 200px;
-        min-height: 200px;
-        max-width: 300px; }
+        min-height: 150px; }
         .bodycontacto .contenedorform .form-register textarea::placeholder {
           color: #3c9e3396; }
       .bodycontacto .contenedorform .form-register .controls {
@@ -376,68 +354,56 @@ footer {
   .containerprocesadores h2 {
     margin-top: 60px;
     margin-bottom: 20px;
-    padding: 4px;
     font-size: 24px;
     text-transform: uppercase;
+    padding: 4px;
     text-shadow: 2px 2px 10px #3c9e33;
     border-style: outset;
     border-radius: 4px;
     border-color: #3c9e33;
     background-color: #121212;
     color: #ffffff; }
-
-.ulintel {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  height: 100%;
-  width: 100%; }
-  .ulintel li {
+  .containerprocesadores .ulintel, .containerprocesadores .ulamd {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    width: 100%; }
+    .containerprocesadores .ulintel li, .containerprocesadores .ulamd li {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
+      height: 230px;
+      width: 210px;
+      border: #3c9e33 solid 1px;
+      margin: 5% 0;
+      transition: transform 0.3s ease-in-out; }
+      .containerprocesadores .ulintel li:hover, .containerprocesadores .ulamd li:hover {
+        filter: opacity(0.9);
+        transform: scale(1.04); }
+      .containerprocesadores .ulintel li p, .containerprocesadores .ulamd li p {
+        font-size: 1.7rem;
+        margin-top: 10px;
+        margin-bottom: 0; }
+      .containerprocesadores .ulintel li img, .containerprocesadores .ulamd li img {
+        margin-top: 10px; }
+  .containerprocesadores .ulamd li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
     height: 230px;
     width: 210px;
     border: #3c9e33 solid 1px;
     margin: 5% 0;
     transition: transform 0.3s ease-in-out; }
-    .ulintel li:hover {
+    .containerprocesadores .ulamd li:hover {
       filter: opacity(0.9);
       transform: scale(1.04); }
-    .ulintel li p {
-      font-size: 1.7rem;
-      margin-top: 10px;
-      margin-bottom: 0; }
-    .ulintel li img {
-      margin-top: 10px; }
-
-.ulamd {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  height: 100%;
-  width: 100%; }
-  .ulamd li {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
-    height: 230px;
-    width: 210px;
-    border: #3c9e33 solid 1px;
-    margin: 5% 0;
-    transition: transform 0.3s ease-in-out; }
-    .ulamd li:hover {
-      filter: opacity(0.9);
-      transform: scale(1.04); }
-    .ulamd li p {
+    .containerprocesadores .ulamd li p {
       font-size: 1.6rem;
       margin-top: 10px;
       margin-bottom: 0; }
-    .ulamd li img {
+    .containerprocesadores .ulamd li img {
       margin-top: 10px; }
 
 .itemproce {
@@ -464,7 +430,7 @@ footer {
             font-size: 12px; }
   .container {
     margin-top: 50px; }
-    .container .divpadredestacados {
+    .container .divpadredestacados, .container .section .divpadredestacados .divpadredestacados-item, .section .divpadredestacados .container .divpadredestacados-item {
       display: grid;
       grid-template-columns: auto auto;
       grid-template-rows: auto auto auto; }
@@ -501,7 +467,8 @@ footer {
           width: 230px; }
   .jumbotron {
     height: 400px;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-top: 50px; }
     .jumbotron .jumbodescript {
       font-size: 18px; }
     .jumbotron .jumbotitle {
@@ -524,6 +491,10 @@ footer {
       font-size: 26px; }
     .tituloform h2 {
       font-size: 22px; }
+  .form-register {
+    min-width: 400px;
+    width: 400px;
+    height: 500px; }
   .h1proce {
     margin-top: 90px; }
   .containerprocesadores {
@@ -531,17 +502,17 @@ footer {
     max-height: 100%;
     margin: 10%;
     text-align: center; }
-    .containerprocesadores .ulintel {
+    .containerprocesadores .ulintel, .containerprocesadores .ulamd {
       flex-direction: row;
       justify-content: space-around; }
-      .containerprocesadores .ulintel li {
+      .containerprocesadores .ulintel li, .containerprocesadores .ulamd li {
         height: 300px;
         width: 280px; }
-        .containerprocesadores .ulintel li p {
+        .containerprocesadores .ulintel li p, .containerprocesadores .ulamd li p {
           font-size: 2.1rem;
           margin-top: 2rem;
           margin-bottom: 0; }
-        .containerprocesadores .ulintel li img {
+        .containerprocesadores .ulintel li img, .containerprocesadores .ulamd li img {
           margin-top: 2rem; }
     .containerprocesadores .ulamd {
       flex-direction: row;
@@ -574,24 +545,24 @@ footer {
             font-size: 15px; }
   .container {
     margin-top: 50px; }
-    .container .divpadredestacados {
+    .container .divpadredestacados, .container .section .divpadredestacados .divpadredestacados-item, .section .divpadredestacados .container .divpadredestacados-item {
       display: grid;
       grid-template-columns: auto auto auto;
       grid-template-rows: auto auto; }
-      .container .divpadredestacados .d {
+      .container .divpadredestacados .d, .section .divpadredestacados .container .divpadredestacados-item .d {
         margin-bottom: 8%; }
   .catalogo {
     margin-top: 80px;
     font-size: 25px; }
-  .art {
+  .contenedorpadrecatalogo .art {
     height: 320px;
     width: 320px; }
-    .art .linkcatalogo {
+    .contenedorpadrecatalogo .art .linkcatalogo {
       height: 320px;
       width: 320px; }
-      .art .linkcatalogo .arttitle {
+      .contenedorpadrecatalogo .art .linkcatalogo .arttitle {
         font-size: 20px; }
-      .art .linkcatalogo .imagescatalogo {
+      .contenedorpadrecatalogo .art .linkcatalogo .imagescatalogo {
         height: 270px;
         width: 270px; }
   .jumbotron {
@@ -627,13 +598,10 @@ footer {
       font-size: 26px; }
     .contenedorform .tituloform h2 {
       font-size: 22px; }
-    .contenedorform .form-register {
-      width: 600px;
-      height: 500px; }
-      .contenedorform .form-register textarea {
-        max-height: 100px;
-        min-height: 100px;
-        max-width: 600px; }
+  .form-register {
+    min-width: 500px;
+    width: 500px;
+    height: 400px; }
   .h1proce {
     margin-top: 120px; }
   .containerprocesadores {
@@ -641,17 +609,17 @@ footer {
     max-height: 100%;
     margin: 10%;
     text-align: center; }
-    .containerprocesadores .ulintel {
+    .containerprocesadores .ulintel, .containerprocesadores .ulamd {
       flex-direction: row;
       justify-content: space-around; }
-      .containerprocesadores .ulintel li {
+      .containerprocesadores .ulintel li, .containerprocesadores .ulamd li {
         height: 300px;
         width: 280px; }
-        .containerprocesadores .ulintel li p {
+        .containerprocesadores .ulintel li p, .containerprocesadores .ulamd li p {
           font-size: 2.1rem;
           margin-top: 2rem;
           margin-bottom: 0; }
-        .containerprocesadores .ulintel li img {
+        .containerprocesadores .ulintel li img, .containerprocesadores .ulamd li img {
           margin-top: 2rem; }
     .containerprocesadores .ulamd {
       flex-direction: row;
@@ -686,13 +654,13 @@ footer {
             font-size: 18px; }
   .container {
     margin-top: 50px; }
-    .container .divpadredestacados {
+    .container .divpadredestacados, .container .section .divpadredestacados .divpadredestacados-item, .section .divpadredestacados .container .divpadredestacados-item {
       display: grid;
       grid-template-columns: auto auto auto;
       grid-template-rows: auto auto; }
-      .container .divpadredestacados .d {
+      .container .divpadredestacados .d, .section .divpadredestacados .container .divpadredestacados-item .d {
         margin-bottom: 8%; }
-      .container .divpadredestacados .descripciondestacados {
+      .container .divpadredestacados .descripciondestacados, .section .divpadredestacados .container .divpadredestacados-item .descripciondestacados {
         margin: 10px 65px; }
   .catalogo {
     margin-top: 80px;
@@ -722,13 +690,11 @@ footer {
     .jumbotron .jumbotitle {
       font-size: 36px;
       margin-top: 5%;
-      text-align: left;
-      margin-left: 5%; }
+      text-align: left; }
     .jumbotron .jumbodescript {
-      text-align: start;
+      align-self: center;
       font-size: 26px;
-      width: 60%;
-      margin-left: 3%; }
+      width: 60%; }
   .container-fluid {
     max-width: 1500px;
     display: flex;
@@ -751,12 +717,9 @@ footer {
     .contenedorform .tituloform h2 {
       font-size: 25px; }
     .contenedorform .form-register {
+      min-width: 600px;
       width: 600px;
       height: 500px; }
-      .contenedorform .form-register textarea {
-        max-height: 100px;
-        min-height: 100px;
-        max-width: 600px; }
   .h1proce {
     margin-top: 120px; }
   .containerprocesadores {
@@ -770,17 +733,17 @@ footer {
         margin-top: 20px; }
       .containerprocesadores h2:first-of-type {
         margin-top: -50px; }
-    .containerprocesadores .ulintel {
+    .containerprocesadores .ulintel, .containerprocesadores .ulamd {
       flex-direction: row;
       justify-content: space-around; }
-      .containerprocesadores .ulintel li {
+      .containerprocesadores .ulintel li, .containerprocesadores .ulamd li {
         height: 300px;
         width: 280px; }
-        .containerprocesadores .ulintel li p {
+        .containerprocesadores .ulintel li p, .containerprocesadores .ulamd li p {
           font-size: 2.1rem;
           margin-top: 2rem;
           margin-bottom: 0; }
-        .containerprocesadores .ulintel li img {
+        .containerprocesadores .ulintel li img, .containerprocesadores .ulamd li img {
           margin-top: 2rem; }
     .containerprocesadores .ulamd {
       flex-direction: row;

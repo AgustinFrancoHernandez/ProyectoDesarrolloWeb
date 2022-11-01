@@ -44,26 +44,27 @@
 		font-size: 25px;
 	}
 
-	.art {
-		height: 320px;
-		width: 320px;
-
-		.linkcatalogo {
+	.contenedorpadrecatalogo {
+		.art {
 			height: 320px;
 			width: 320px;
 
-			.arttitle {
-				font-size: 20px;
+			.linkcatalogo {
+				height: 320px;
+				width: 320px;
+
+				.arttitle {
+					font-size: 20px;
+				}
+
+				.imagescatalogo {
+					height: 270px;
+					width: 270px;
+				}
 			}
-
-			.imagescatalogo {
-				height: 270px;
-				width: 270px;
-			}
-
-
 		}
 	}
+
 
 	.jumbotron {
 		height: 400px;
@@ -114,17 +115,12 @@
 				font-size: 22px;
 			}
 		}
+	}
 
-		.form-register {
-			width: 600px;
-			height: 500px;
-
-			textarea {
-				max-height: 100px;
-				min-height: 100px;
-				max-width: 600px;
-			}
-		}
+	.form-register {
+		min-width: 500px;
+		width: 500px;
+		height: 400px;
 	}
 
 	.h1proce {

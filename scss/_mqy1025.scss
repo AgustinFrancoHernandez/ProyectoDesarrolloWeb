@@ -88,14 +88,12 @@
 			font-size: 36px;
 			margin-top: 5%;
 			text-align: left;
-			margin-left: 5%;
 		}
 
 		.jumbodescript {
-			text-align: start;
+			align-self: center;
 			font-size: 26px;
 			width: 60%;
-			margin-left: 3%;
 		}
 
 	}
@@ -133,14 +131,9 @@
 		}
 
 		.form-register {
+			min-width: 600px;
 			width: 600px;
 			height: 500px;
-
-			textarea {
-				max-height: 100px;
-				min-height: 100px;
-				max-width: 600px;
-			}
 		}
 	}
 

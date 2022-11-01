@@ -93,7 +93,7 @@
 	.jumbotron {
 		height: 400px;
 		max-width: 100%;
-
+		margin-top: 50px;
 		.jumbodescript {
 			font-size: 18px;
 		}
@@ -131,7 +131,13 @@
 			font-size: 22px;
 		}
 	}
-
+	
+	.form-register {
+		min-width: 400px;
+		width: 400px;
+		height: 500px;
+	}
+	
 	.h1proce {
 		margin-top: 90px;
 	}
